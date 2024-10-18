@@ -1,0 +1,15 @@
+name: Manual Hello World Workflow
+
+# Control when the workflow can run (manually)
+on:
+  workflow_dispatch:
+
+# Define the job
+jobs:
+  hello-world:
+    runs-on: ubuntu-latest
+
+    steps:
+      # This step prints "Hello, World!" to the console
+      - name: Print Hello World
+        run: echo "Hello, World!"
